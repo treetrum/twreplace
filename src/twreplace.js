@@ -7,7 +7,7 @@ function twReplace() {
 		var arrayOfData = JSON.parse(elementsToReplace[i].dataset.twreplace);
 		var wordSpeed = elementsToReplace[i].dataset.twreplaceWordspeed;
 		var charSpeed = elementsToReplace[i].dataset.twreplaceCharspeed;
-		if (charSpeed > 50) { charSpeed = 50; console.error("data-twreplace-charspeed cannot be higher than 50, defaulting to 50.") }
+		// if (charSpeed > 50) { charSpeed = 50; console.error("data-twreplace-charspeed cannot be higher than 50, defaulting to 50.") }
 
 		playTicker(elementsToReplace[i], arrayOfData, wordSpeed, charSpeed);
 	}
