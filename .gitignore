@@ -1,4 +1,4 @@
 .DS_Store
 .grunt/
 node_modules/
-.sass-cache
+.sass-cache/
