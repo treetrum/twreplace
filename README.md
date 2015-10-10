@@ -19,7 +19,7 @@ It takes just second to install and use TWReplace.js
 ##### Bower
 
 ````bash
-    bower install twreplace
+bower install twreplace
 ````
 
 ##### HTML
@@ -29,28 +29,31 @@ It takes just second to install and use TWReplace.js
 ````
 
 ### Basic Usage
+
 ##### HTML
+Usage is incredibly simple requiring only a single dataset attribute added to any text based html element. It is important to pass a valid JSON array, including double quotes, of values.
 
 ````html
 <p>This text has an <span twreplace='["fantastic", "easy", "simple"]'>editable</span> element</p>
 ````
 
 ##### JS
+Make sure to initalise TWReplace!
 
 ````javascript
 twReplace();
 ````
 
-### Advanced Usage
+### Customisability
 Several options are available to TWReplace.js at this stage:
 
-- twreplace-charspeed (Speed that characters are removed/added. Measured in ms. Defaults to 25)
+- **twreplace-charspeed** (Speed that characters are removed/added. Measured in ms. Defaults to 25)
 
 ```` html
  <p twreplace='["Word 1", "Word 2"]' twreplace-charspeed="50">Change</p>
 ````
 
-- twreplace-wordspeed (Speed that words are changed. Measured in ms. Defaults to 2000)
+- **twreplace-wordspeed** (Speed that words are changed. Measured in ms. Defaults to 2000)
 
 ```` html
  <p twreplace='["Word 1", "Word 2"]' twreplace-wordspeed="1000">Change</p>
