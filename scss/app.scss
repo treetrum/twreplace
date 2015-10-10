@@ -12,9 +12,11 @@ body {
 	font-family: 'Fira Mono';
 }
 
+
+
 .wrapper {
 	width: 320px;
-	margin: 0 auto;
+	margin: -15vh auto 0 auto;
 }
 
 .subtitle {
@@ -34,5 +36,16 @@ body {
 	p {
 		margin: 0;
 		// font-family: 'Fira Mono';
+	}
+	span {
+		color: red;
+	}
+}
+
+.link-box {
+	font-size: 12px;
+	a, a:visited {
+		color: red;
+		
 	}
 }

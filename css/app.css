@@ -9,7 +9,7 @@ body {
 
 .wrapper {
   width: 320px;
-  margin: 0 auto; }
+  margin: -15vh auto 0 auto; }
 
 .subtitle {
   margin-top: -20px; }
@@ -24,5 +24,12 @@ body {
   line-height: 50px; }
   .typewriter-box p {
     margin: 0; }
+  .typewriter-box span {
+    color: red; }
+
+.link-box {
+  font-size: 12px; }
+  .link-box a, .link-box a:visited {
+    color: red; }
 
 /*# sourceMappingURL=app.css.map */
