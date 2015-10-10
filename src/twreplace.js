@@ -1,3 +1,10 @@
+var naughtyArr = [];
+var naughtyVar = -1;
+
+window.addEventListener('load', twReplace());
+window.addEventListener('focus', function(){ twReplace() });
+window.addEventListener('blur', function(){ gracefulUnload() });
+
 function twReplace() {
 	// Select all elements with the data-twreplace selector
 	var elementsToReplace = document.querySelectorAll('[data-twreplace]');
@@ -7,7 +14,6 @@ function twReplace() {
 		var arrayOfData = JSON.parse(elementsToReplace[i].dataset.twreplace);
 		var wordSpeed = elementsToReplace[i].dataset.twreplaceWordspeed;
 		var charSpeed = elementsToReplace[i].dataset.twreplaceCharspeed;
-		// if (charSpeed > 50) { charSpeed = 50; console.error("data-twreplace-charspeed cannot be higher than 50, defaulting to 50.") }
 
 		playTicker(elementsToReplace[i], arrayOfData, wordSpeed, charSpeed);
 	}
@@ -17,7 +23,7 @@ function playTicker(element, content, wordSpeed, charSpeed) {
 	if (typeof wordSpeed === "undefined") { wordSpeed = 2000; }
 	if (typeof charSpeed === "undefined") { charSpeed = 25; }
 	var lastUsedIndex = 0;
-	setInterval(function(){
+	naughtyArr[++naughtyVar] = setInterval(function(){
 		var randomIndex = Math.floor(Math.random() * content.length);
 
 		if (randomIndex === lastUsedIndex) {
@@ -64,4 +70,12 @@ function changeWord(selector, newWord, typingSpeed) {
 			}, typingSpeed, newWordLength);
 		}
 	}, typingSpeed, oldWordLength, loopCount);
+}
+
+function gracefulUnload() {
+	for (var i = 0; i < naughtyArr.length; i++) {
+		window.clearInterval(naughtyArr[i]);
+	}
+	naughtyArr = [];
+	naughtyVar = -1;
 }
