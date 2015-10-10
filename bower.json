@@ -1,0 +1,17 @@
+{
+  "name": "twreplace",
+  "homepage": "https://github.com/samjdavis13/twreplace",
+  "authors": [
+    "Sam Davis <sam@sjd.co>"
+  ],
+  "description": "Short JS (Vanilla) Plugin to replace text with a typing animation",
+  "main": "twreplace.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
