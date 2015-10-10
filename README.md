@@ -37,13 +37,6 @@ Usage is incredibly simple requiring only a single dataset attribute added to an
 <p>This text has an <span twreplace='["fantastic", "easy", "simple"]'>editable</span> element</p>
 ````
 
-##### JS
-Make sure to initalise TWReplace!
-
-````javascript
-twReplace();
-````
-
 ### Customisability
 Several options are available to TWReplace.js at this stage:
 
