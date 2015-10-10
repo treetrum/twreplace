@@ -1,0 +1,38 @@
+body {
+	background-color: rgb(240,240,240);
+
+	width: 100vw;
+	height: 100vh;
+
+	text-align: center;
+
+	display: flex;
+	align-items: center;
+
+	font-family: 'Fira Mono';
+}
+
+.wrapper {
+	width: 320px;
+	margin: 0 auto;
+}
+
+.subtitle {
+	margin-top: -20px;
+}
+
+.heading-box {
+	margin-bottom: 50px;
+}
+
+.typewriter-box {
+	
+	height: 50px;
+	background-color: #fff;
+	font-size: 16px;
+	line-height: 50px;
+	p {
+		margin: 0;
+		// font-family: 'Fira Mono';
+	}
+}

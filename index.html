@@ -5,18 +5,36 @@
 	<link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-	<p>This text has an <span 	
-		style="font-weight: bold" 
-		data-twreplace='["Word 1", "Word 2", "Word 3", "Word 4"]' 
-		data-twreplace-charspeed="50" 
-		data-twreplace-wordspeed="1000"
-	>editable</span> element</p>
-
-	<p data-twreplace='["Word 5", "Word 6"]'>Hey there!</p>
+	
+	<div class="wrapper">
+		<div class="heading-box">
+			<h1>TWReplace</h1>
+			<h3 class="subtitle">(Type Writer Replace)</h3>
+		</div>
+	
+		<div class="typewriter-box">
+			<p>
+				Mary had a little <span data-twreplace-charspeed="75" data-twreplace-wordspeed="3000" data-twreplace='["dog", "cat", "cow", "elephant", "rhino", "sloth", "fish", "rat", "mouse", "goat"]'>lamb</span>.
+			</p>
+		</div>
+	</div>
 
 	<script src="src/twreplace.js"></script>
 	<script>
 		twReplace();
 	</script>
+	<script type="text/javascript">
+	  WebFontConfig = {
+	    google: { families: [ 'Fira+Mono::latin' ] }
+	  };
+	  (function() {
+	    var wf = document.createElement('script');
+	    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+	      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+	    wf.type = 'text/javascript';
+	    wf.async = 'true';
+	    var s = document.getElementsByTagName('script')[0];
+	    s.parentNode.insertBefore(wf, s);
+	  })(); </script>
 </body>
 </html>
