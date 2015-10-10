@@ -1,6 +1,6 @@
 {
   "name": "twreplace",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Short JS (Vanilla) Plugin to replace text with a typing animation",
   "main": "twreplace.js",
   "scripts": {
