@@ -10,7 +10,7 @@ follow [@samjdavis](http://twitter.com/samjdavis) for updates on TWRelpace.
 Coming soon... (hopefully)
 
 ## Version
-v0.2.1
+v0.3.0
 
 ## Documentation
 It takes just second to install and use TWReplace.js
