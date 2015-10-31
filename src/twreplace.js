@@ -6,6 +6,9 @@ window.addEventListener('focus', function(){ twReplace() });
 window.addEventListener('blur', function(){ gracefulUnload() });
 
 function twReplace() {
+	// Unload any previous instances of TWReplace before loading this one.
+	gracefulUnload();
+
 	// Select all elements with the data-twreplace selector
 	var elementsToReplace = document.querySelectorAll('[data-twreplace]');
 
