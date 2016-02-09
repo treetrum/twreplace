@@ -6,7 +6,7 @@
   ],
   "description": "Short JS (Vanilla) Plugin to replace text with a typing animation",
   "main": "twreplace.js",
-  "version": 0.3.2
+  "version": 0.3.2,
   "license": "MIT",
   "ignore": [
     "**/.*",
