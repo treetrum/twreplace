@@ -7,7 +7,7 @@ follow [@samjdavis](http://twitter.com/samjdavis) for updates on TWRelpace.
 ### [LIVE DEMO](http://samjdavis13.github.io/twreplace/)
 
 ## Live examples
-Coming soon... (hopefully)
+[sjd.co](http://sjd.co/)
 
 ## Documentation
 It takes just second to install and use TWReplace.js
