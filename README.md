@@ -74,6 +74,6 @@ If you find a bug, please report it [here on Github](https://github.com/samjdavi
 Developed by Samuel Davis, [sjd.co](http://sjd.co)
 
 - [@samjdavis](http://twitter.com/samjdavis)
-- [Github profile](http://github.com/samjdavis13)
+- [Github profile](http://github.com/treetrum)
 
 Thanks!
